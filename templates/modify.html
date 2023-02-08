@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+{% block modify %}
+  <div>
+    <form action="/modify" method="post">
+        <label for="html">Enter Name </label><br>
+        <input type="text" name="user_name"><br>
+        <label for="html">Enter comments </label>
+        <input type="text" name="user_comment">
+        <label for="html">Enter Income </label>
+        <input type="text" name="user_income">
+        <button type="submit">submit</button>
+    </form>
+  </div>
+{% endblock %}
